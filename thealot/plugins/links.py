@@ -33,7 +33,7 @@ class LinksPlugin(Plugin):
     def get_link(self, key):
         result = self.bot.db.query(Link).get(key)
         if result is not None:
-            print(type(result))
+            print((type(result)))
             return result.url
         else:
             return "Link not found" #404
